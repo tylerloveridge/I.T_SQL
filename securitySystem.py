@@ -18,8 +18,8 @@ while True:
     re, img = cam.read()  # setting the camera feed to return an image
 
     img = cv2.flip(img, 1)  # flip to mirror view x axis
-    #           video       string                     pos      font size   colour      stroke
-    cv2.putText(img, "Michael you alright?", (100, 400), font, 2, (255, 0, 0), 2, cv2.LINE_AA)
+    #   video       string                     pos      font size   colour      stroke
+    cv2.putText(img, "HIT THAT WOAH", (500, 400), font, 1, (255, 0, 0), 2, cv2.LINE_AA)
     cv2.putText(img, str(datetime.now()), (950, 650), font, .5, (255, 255, 255), 1, cv2.LINE_AA)
     cv2.imshow('Tyler Video', img)  # displays camera feed window
 
